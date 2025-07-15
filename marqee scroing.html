@@ -1,0 +1,28 @@
+<!-- <marquee direction="right">Scrolling ganesh Right</marquee>
+<marquee direction="left">Scrolling ganesh Left</marquee>
+<marquee direction="up">Scrolling ganesh Up</marquee>
+<marquee direction="down">Scrolling ganesh Down</marquee>
+<div class="scroll-text">Ganesh’s Website Rocks!</div> -->
+
+<style>
+.scroll-text {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scrollLeft 40s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+<marquee 
+  direction="right" 
+  scrollamount="5" 
+  behavior="alternate" 
+  bgcolor="lightblue" 
+  width="400" 
+  height="50">
+  🚀 Welcome to Ganesh's Page!
+</marquee>
